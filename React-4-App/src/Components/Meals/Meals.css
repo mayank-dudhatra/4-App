@@ -1,0 +1,356 @@
+.meal-container {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+  }
+
+  
+  .meal-card {
+    background: linear-gradient(145deg, #f8f8f8, #fdfdfd); 
+  }
+  
+  .meal-button {
+    background: linear-gradient(90deg, #126d12, #1e851e); 
+  }
+  
+  .meal-button:hover {
+    background: linear-gradient(90deg, #ffffff, #d6f5d6); 
+  }
+  
+
+
+  .meal-title {
+    font-size: 3.5rem;
+    color: #126d12; 
+    margin-bottom: 40px; 
+    font-weight: bold;
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+  }
+  
+
+  .meal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px; 
+    padding: 0 20px;
+  }
+  
+
+  .meal-card {
+    background-color: #fdfdfd; 
+    border: 2px solid #eeeeee;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px 15px; 
+  }
+  
+  .meal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2); 
+    border-color: #126d12; 
+  }
+  
+ 
+  .meal-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 5px solid #126d12; 
+    border-radius: 10px; 
+  }
+  
+
+  .meal-name {
+    font-size: 1.8rem;
+    color: #222; 
+    font-weight: bold;
+    margin: 20px 0 10px; 
+    line-height: 1.4;
+  }
+  
+  .meal-category {
+    font-size: 1.2rem;
+    color: #666; 
+    margin-bottom: 15px; 
+    font-family: 'Poppins', sans-serif;
+    padding: 20px
+    ; 
+  }
+  
+  
+  .meal-button {
+    display: inline-block;
+    padding: 12px 25px; 
+    background-color: #126d12;
+    color: #ffffff; 
+    text-transform: uppercase; 
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px; 
+    border: 2px solid transparent; 
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .meal-button:hover {
+    background-color: #ffffff; 
+    color: #126d12; 
+    border: 2px solid #126d12; 
+    transform: scale(1.1); 
+  }
+  
+
+  .meal-card h2,
+  .meal-card p,
+  .meal-card a {
+    margin: 0 auto; 
+    text-align: center; 
+    max-width: 80%; 
+  }
+
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #126d12;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+
+  
+  @media screen and (max-width: 768px) {
+    .meal-title {
+      font-size: 2.5rem; 
+    }
+  
+    .meal-card {
+      padding: 15px; 
+    }
+  
+    .meal-name {
+      font-size: 1.6rem;
+    }
+  
+    .meal-button {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  .search-bar {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 50px;
+    border: 2px solid #ddd;
+    background-color: #f7f7f7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .search-bar input:focus {
+    border-color: #126d12;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(18, 109, 18, 0.4);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Existing Styles for Meal Container, Meal Grid, etc. */
+
+/* Container Styling */
+/* .meal-container {
+  padding: 60px 40px;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.meal-title {
+  font-size: 3.5rem;
+  color: #126d12;
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.meal-card {
+  background-color: #fdfdfd;
+  border: 2px solid #eeeeee;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px 15px;
+}
+
+.meal-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  border-color: #126d12;
+}
+
+.meal-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 5px solid #126d12;
+  border-radius: 10px;
+}
+
+.meal-name {
+  font-size: 1.8rem;
+  color: #222;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  line-height: 1.4;
+}
+
+.meal-category {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.meal-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #126d12;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+
+.meal-button:hover {
+  background-color: #ffffff;
+  color: #126d12;
+  border: 2px solid #126d12;
+  transform: scale(1.1);
+}
+
+.search-bar input {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 420px;
+  margin: 20px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+  border-color: #126d12;
+  outline: none;
+  box-shadow: 0 0 5px rgba(18, 109, 18, 0.4);
+}
+
+.filter {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.filter label {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.filter select {
+  padding: 10px 18px;
+  font-size: 1.1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter select:hover {
+  background-color: #f1f1f1;
+}
+
+.filter select:focus {
+  border-color: #126d12;
+  outline: none;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #126d12;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 50px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+z
+
+
+
+ */
+

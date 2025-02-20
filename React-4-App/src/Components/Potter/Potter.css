@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .potter-head {
+    /* margin-top: 40px; */
+    text-align: center;
+    padding: 90px 50px;
+    background-image: url("https://www.harrypotterhogwartsmystery.com/wp-content/uploads/2023/07/750x513_PBH-poster_web.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #a5960b; /* Golden text */
+    border-bottom: 5px solid #126d12;
+    font-family: 'Cinzel Decorative', serif;
+  }
+  
+  .potter-head::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+  }
+  
+  .potter-heading,
+  .potter-title {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .potter-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+    color: #126d12; /* Golden text */
+  }
+  
+  .potter-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #126d12; /* White for contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow */
+  }
+  
+  
+  /* Button Styles */
+  .potter-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+  }
+  
+  .potter-options button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #126d12;
+    background-color: #333333;
+    border: 2px solid #126d12;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .potter-options button:hover {
+    background-color: #126d12;
+    color: #333333;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Loading Spinner */
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ddd;
+    border-top: 5px solid #126d12;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Data Container */
+  .potter-data {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 40px 20px;
+  }
+  
+  .potter-item {
+    background: linear-gradient(145deg, #ffffff, #f3f3f3);
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .potter-item:hover {
+    transform: translateY(-10px);
+    border-color: #126d12;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Images */
+  .potter-image,
+  .potter-book-cover {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #126d12;
+    margin-bottom: 15px;
+  }
+  
+  .potter-item h3 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin: 10px 0;
+  }
+  
+  .potter-item p {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .potter-heading {
+      font-size: 2.5rem;
+    }
+  
+    .potter-title {
+      font-size: 1.2rem;
+    }
+  
+    .potter-options button {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+  
+    .potter-item h3 {
+      font-size: 1.3rem;
+    }
+  }
+  

@@ -1,0 +1,329 @@
+/* 
+.cocktail-container {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+  }
+  
+ 
+  .cocktail-title {
+    font-size: 3.5rem;
+    color: #126d12; 
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  
+  .cocktail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  
+  .cocktail-card {
+    background: linear-gradient(145deg, #f8f8f8, #fdfdfd); 
+    border: 2px solid #eeeeee;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px 15px;
+  }
+  
+  .cocktail-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(18, 109, 18, 0.4); 
+    border-color: #126d12; 
+  }
+  
+
+  .cocktail-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 5px solid #126d12;
+    border-radius: 10px;
+  }
+  
+
+  .cocktail-name {
+    font-size: 1.8rem;
+    color: #222; 
+    font-weight: bold;
+    margin: 20px 0 10px;
+    line-height: 1.4;
+  }
+  
+
+  .cocktail-category {
+    font-size: 1.2rem;
+    color: #666; 
+    margin-bottom: 15px;
+  }
+
+
+  .cocktail-glass {
+    font-size: 1rem;
+    color: #888; 
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #126d12;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cocktail-title {
+      font-size: 2.5rem;
+    }
+  
+    .cocktail-card {
+      padding: 15px;
+    }
+  
+    .cocktail-name {
+      font-size: 1.6rem;
+    }
+  }
+   */
+
+
+
+
+
+
+
+  .cocktail-container {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+  }
+  .imageb{
+    text-align: center;
+    margin-top: 0;
+    padding: 200px 0px;
+    background-repeat: no-repeat;
+    overflow: none;
+    background-image: url("https://img.freepik.com/free-photo/fresh-cocktails-with-ice-lemon-lime-fruits-generative-ai_188544-12370.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+  }
+
+  .cocktail-title {
+    font-size: 3.5rem;
+    color: #126d12;
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .cocktail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .cocktail-card {
+    background: linear-gradient(145deg, #f8f8f8, #fdfdfd);
+    border: 2px solid #eeeeee;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px 15px;
+  }
+  
+  .cocktail-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(18, 109, 18, 0.4);
+    border-color: #126d12;
+  }
+  
+  .cocktail-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 5px solid #126d12;
+    border-radius: 10px;
+  }
+  
+  .cocktail-name {
+    font-size: 1.8rem;
+    color: #222;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    line-height: 1.4;
+  }
+  
+  .cocktail-category {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .cocktail-glass {
+    font-size: 1rem;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  .recipe-button {
+    display: inline-block;
+    padding: 12px 25px; 
+    background-color: #126d12;
+    color: #ffffff; 
+    text-transform: uppercase; 
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px; 
+    border: 2px solid transparent; 
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .recipe-button:hover {
+    background-color: #ffffff; 
+    color: #126d12; 
+    border: 2px solid #126d12; 
+    transform: scale(1.1);   }
+  
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #126d12;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .recipe-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .recipe-content {
+    background: white;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #126d12;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: #0c4d0c;
+  }
+  
+  h3 {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cocktail-title {
+      font-size: 2.5rem;
+    }
+  
+    .cocktail-card {
+      padding: 15px;
+    }
+  
+    .cocktail-name {
+      font-size: 1.6rem;
+    }
+  }
+
+  .search-bar {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-bar input {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 50px;
+    border: 2px solid #ddd;
+    background-color: #f7f7f7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  .search-bar input:focus {
+    border-color: #126d12;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(18, 109, 18, 0.4);
+  }
+  

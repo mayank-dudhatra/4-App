@@ -1,0 +1,68 @@
+.bank-container {
+  padding: 60px 40px;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.bank-title {
+  font-size: 3.5rem;
+  color: #126d12; 
+  margin-bottom: 40px; 
+  font-weight: bold;
+  letter-spacing: 2px; 
+  text-transform: uppercase; 
+}
+
+.bank-button {
+  display: inline-block;
+  padding: 12px 25px; 
+  background-color: #126d12;
+  color: #ffffff; 
+  text-transform: uppercase; 
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px; 
+  border: 2px solid transparent; 
+  transition: all 0.4s ease-in-out;
+}
+
+.bank-button:hover {
+  background-color: #ffffff; 
+  color: #126d12; 
+  border: 2px solid #126d12; 
+  /* transform: scale(1.1);  */
+}
+.bank-button {
+  background: linear-gradient(90deg, #126d12, #1e851e); 
+}
+
+.bank-button:hover {
+  background: linear-gradient(90deg, #ffffff, #d6f5d6); 
+}
+
+.search-bar-bank {
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar-bank input {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 50px;
+  border: 2px solid #ddd;
+  background-color: #f7f7f7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease;
+}
+.search-bar-bank input:focus {
+  border-color: #126d12;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 15px rgba(18, 109, 18, 0.4);
+}
+

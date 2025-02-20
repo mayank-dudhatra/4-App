@@ -1,0 +1,71 @@
+/* .navbar a {
+    color: #000; 
+    text-decoration: none;
+  }
+  
+  .navbar a.active {
+    color: #126d12; 
+  }
+.navbar a:hover{
+    color: #126d12;
+     text-decoration: underline;
+     transition: ;
+} */
+
+
+.main{
+    display: flex;
+}
+.navbar {
+    
+    background-color: #ffffff; /* White background */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  /* Navbar Links */
+  .navbar a {
+    color: #000000; /* Black text color */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 15px; /* Spacing between links */
+    padding: 10px 20px; /* Padding for better click area */
+    border-radius: 20px; /* Rounded pill shape */
+    transition: all 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  /* Hover Effect */
+  .navbar a:hover {
+    background-color: #d4e6d4; /* Light green background */
+    color: #126d12; /* Dark green text */
+  }
+  
+  /* Active Link Style */
+  .navbar a.active {
+    background-color: #d4e6d4; /* Highlight active link background */
+    color: #126d12; /* Dark green text for active link */
+  }
+  .navbar a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500; /* Medium weight for a modern look */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack links vertically on smaller screens */
+      padding: 10px;
+    }
+    .navbar a {
+      margin: 10px 0; /* Adjust spacing for stacked layout */
+    }
+  }
+ 
+
+  
